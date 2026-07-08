@@ -32,3 +32,23 @@ This repository contains static HTML files. To view them locally, you can use a 
 4. Open your web browser and go to the URL provided by the command to view the site.
 
 These methods will serve your site locally, which is useful for development and testing purposes.
+
+## QA for Tab Bar
+
+### Local Preview
+To perform a QA review, start by serving the application locally using one of the methods outlined above.
+
+### Visual Checks
+- Verify the tab bar is visually aligned according to design specifications in both light and dark modes.
+
+### Dark Mode Testing
+- Test the tab bar in dark mode by setting the theme in localStorage: `localStorage.setItem('theme', 'dark')`.
+- Refresh the page to ensure the tab bar and all components update to dark mode correctly.
+
+### Keyboard Accessibility
+- Ensure that the tab bar is fully navigable using keyboard inputs. Verify that tabbing through options and activating them via the keyboard works as expected.
+
+### CSS/JS Contract Integrity Checklist
+- Ensure the CSS classes and IDs tied to the tab bar are consistent and match the design contract.
+- Verify JavaScript logic handles state changes and events consistently with specifications. 
+- Check for any console errors or warnings when interacting with the tab bar.
