@@ -87,6 +87,38 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 10px 0;
 }
 
+/* Base styles for the tab bar */
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--bg-color);
+  padding-bottom: env(safe-area-inset-bottom);
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Dark theme override for the tab bar */
+[data-theme="dark"] .tab-bar {
+  background-color: #333;
+  border-top-color: rgba(255,255,255,0.1);
+}
+
+/* Focus and hover styles for tab items */
+.tab-bar [role="tab"]:focus,
+.tab-bar [role="tab"]:hover {
+  outline: none;
+  color: var(--primary-color);
+}
+
+/* Active tab style */
+.tab-bar [aria-current="page"] {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
 p {
   font-family: var(--font-family);
   margin: 0 0 10px 0;
