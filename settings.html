@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World App</title>
+    <title>Settings</title>
     <link rel="stylesheet" href="styles.css">
     <script>
         document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
     </script>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <a href="about.html">About Us</a>
-    <a href="faq.html">FAQ</a>
-    <a href="legal.html">Legal</a>
-    <a href="privacy.html">Privacy Policy</a>
-   
+    <h1>Settings</h1>
+    <input type="checkbox" id="theme-toggle"> Toggle Dark Theme
+    <br>
+    <a href="index.html">Back to Home</a>
+    <script src="toggleTheme.js"></script>
 </body>
 </html>
