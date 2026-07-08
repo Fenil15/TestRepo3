@@ -38,10 +38,17 @@ These methods will serve your site locally, which is useful for development and 
 ### Local Preview
 To perform a QA review, start by serving the application locally using one of the methods outlined above.
 
+### Tab Bar Color Scheme
+The tab text in the tab bar is blue (#007BFF) across default, hover/focus, and active states.
+
 ### Visual Checks
 - Verify the tab bar is visually aligned according to design specifications in both light and dark modes.
 
-### Dark Mode Testing
+### QA Steps for Light/Dark Themes
+- Verify the visual presentation and that the tab bar retains the blue tab text color (#007BFF) in both light and dark themes.
+- For dark mode, change the theme in localStorage with: `localStorage.setItem('theme', 'dark')` and refresh the page to ensure all components appear correctly in dark mode.
+
+### Dark Mode Testing (Deprecated)
 - Test the tab bar in dark mode by setting the theme in localStorage: `localStorage.setItem('theme', 'dark')`.
 - Refresh the page to ensure the tab bar and all components update to dark mode correctly.
 
