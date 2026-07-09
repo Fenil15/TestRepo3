@@ -4,28 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings</title>
-    <link rel="stylesheet" href="styles.css">
     <script>
-        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
-    </script></head>
-<body>
-    <h1>Settings</h1>
-    <button id="theme-toggle">Toggle Dark Mode</button>
-    <input type="checkbox" id="theme-toggle"> Toggle Dark Theme
-    <br>
-    <a href="index.html">Back to Home</a>
-    <script src="toggleTheme.js"></script>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+        // Apply persisted or preferred theme as early as possible
+        (function() {
+            var saved = localStorage.getItem('theme');
+            var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
     </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Settings</h1>
-    <input type="checkbox" id="theme-toggle"> Toggle Dark Theme
+    <label>
+        <input type="checkbox" id="theme-toggle"> Dark Theme
+    </label>
     <br>
     <a href="index.html">Back to Home</a>
     <script src="toggleTheme.js"></script>
->>>>>>> vorflux/build/sess-local-3-c2
 </body>
 </html>
