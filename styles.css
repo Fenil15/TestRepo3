@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #6F42C1;
+  background-color: #C62828;
   color: white;
   padding: 10px 0;
   text-align: center;
@@ -56,7 +56,7 @@ footer {
 
 /* Base rule for tab items */
 .tab-bar [role="tab"] {
-  color: #6F42C1;
+  color: #C62828;
 }
 
 /* Dark theme override for the tab bar */
@@ -69,13 +69,13 @@ footer {
 .tab-bar [role="tab"]:focus,
 .tab-bar [role="tab"]:hover {
   outline: none;
-  color: #6F42C1;
+  color: #C62828;
 }
 
 /* Active tab style */
 .tab-bar [aria-current="page"] {
   font-weight: bold;
-  color: #6F42C1;
+  color: #C62828;
 }
 
 p {
