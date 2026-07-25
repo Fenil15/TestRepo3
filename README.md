@@ -39,7 +39,7 @@ These methods will serve your site locally, which is useful for development and 
 To perform a QA review, start by serving the application locally using one of the methods outlined above.
 
 ### Tab Bar Color Scheme
-The primary theme/background color is brown (#A52A2A). The tab text in the tab bar is light gray (#B0B0B0) across default, hover/focus, and active states.
+The primary theme/background color is red (#FF0000). The tab text in the tab bar is light gray (#B0B0B0) across default, hover/focus, and active states.
 
 ### Visual Checks
 - Verify the tab bar is visually aligned according to design specifications in both light and dark modes.
