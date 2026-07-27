@@ -46,7 +46,7 @@ The primary theme/background color is brown (#A52A2A). The tab text in the tab b
 
 ### QA Steps for Light/Dark Themes
 - Verify the visual presentation and that the tab bar retains the light gray tab text color (#B0B0B0) in both light and dark themes.
-- Confirm the app's primary theme accents use brown (#A52A2A) consistently.
+- Confirm the app's primary theme accents use red (#FF0000) consistently.
 - For dark mode, change the theme in localStorage with: `localStorage.setItem('theme', 'dark')` and refresh the page to ensure all components appear correctly in dark mode.
 
 ### Dark Mode Testing (Deprecated)
