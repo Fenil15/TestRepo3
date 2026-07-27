@@ -1,6 +1,6 @@
-# TestRepo3
+# Project Theme Information
 
-## How to Run
+The primary theme/background color is brown (#A52A2A). This color choice ensures consistency and visual appeal across all pages.
 
 This repository contains static HTML files. To view them locally, you can use a simple HTTP server. Follow the instructions below:
 
@@ -60,3 +60,6 @@ The primary theme/background color is brown (#A52A2A). The tab text in the tab b
 - Ensure the CSS classes and IDs tied to the tab bar are consistent and match the design contract.
 - Verify JavaScript logic handles state changes and events consistently with specifications. 
 - Check for any console errors or warnings when interacting with the tab bar.
+
+Make sure to update any references or styles using this color to match the theme guidelines.
+
