@@ -18,7 +18,14 @@
         <a href="settings.html" role="tab">Settings</a>
         <a href="legal.html" role="tab">Legal</a>
     </nav>
-    <h1>Hello, World!</h1>
+    <h1 id="greeting">Hello, World!</h1>
+    <script>
+      fetch("/api/user")
+        .then((response) => response.json())
+        .then((data) => {
+          document.getElementById('greeting').textContent = `HELLO ${data.username}`;
+        });
+    </script>
     <a href="about.html">About Us</a>
     <a href="faq.html">FAQ</a>
     <a href="settings.html">Settings</a>
