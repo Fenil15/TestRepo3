@@ -1,6 +1,6 @@
 # Project Theme Information
 
-The primary theme/background color is yellow (#FFFF00). This color choice ensures consistency and visual appeal across all pages.
+The primary theme/background color is blue (#0000FF). This color choice ensures consistency and visual appeal across all pages.
 
 This repository contains static HTML files. To view them locally, you can use a simple HTTP server. Follow the instructions below:
 
@@ -39,14 +39,14 @@ These methods will serve your site locally, which is useful for development and 
 To perform a QA review, start by serving the application locally using one of the methods outlined above.
 
 ### Tab Bar Color Scheme
-The primary theme/background color is yellow (#FFFF00). The tab text in the tab bar is light gray (#B0B0B0) across default, hover/focus, and active states.
+The primary theme/background color is blue (#0000FF). The tab text in the tab bar is light gray (#B0B0B0) across default, hover/focus, and active states.
 
 ### Visual Checks
 - Verify the tab bar is visually aligned according to design specifications in both light and dark modes.
 
 ### QA Steps for Light/Dark Themes
 - Verify the visual presentation and that the tab bar retains the light gray tab text color (#B0B0B0) in both light and dark themes.
-- Confirm the app's primary theme accents use yellow (#FFFF00) consistently.
+- Confirm the app's primary theme accents use blue (#0000FF) consistently.
 - For dark mode, change the theme in localStorage with: `localStorage.setItem('theme', 'dark')` and refresh the page to ensure all components appear correctly in dark mode.
 
 ### Dark Mode Testing (Deprecated)
