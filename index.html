@@ -33,7 +33,7 @@
                 const response = await fetch('/api/user');
                 if (response.ok) {
                     const data = await response.json();
-                    document.getElementById('greeting').textContent = 'HELLO ' + data.userName;
+                    document.getElementById('greeting').textContent = 'HELLO ' + data.name;
                 } else {
                     console.error('Failed to fetch greeting:', response.status);
                 }
