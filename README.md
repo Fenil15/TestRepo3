@@ -33,6 +33,34 @@ This repository contains static HTML files. To view them locally, you can use a 
 
 These methods will serve your site locally, which is useful for development and testing purposes.
 
+## Starting the Server
+
+This project uses Node.js and Express, serving static files from the project root directory (`__dirname`) and requires configuration via `dotenv`. To get started:
+
+1. Install the dependencies using npm:
+   ```bash
+   npm install
+   ```
+
+2. Start the server:
+   ```bash
+   npm start
+   ```
+
+3. By default, the server runs on [http://localhost:3000](http://localhost:3000), where the `index.html` file will be displayed.
+
+### Environment Configuration
+Ensure you have a `.env` file at the root of your project with the following content:
+```
+USER_NAME=your_username_here
+```
+
+### API Endpoint
+
+The server handles the following:
+- **Static Files**: All static files are served from the project root directory.
+- **API Endpoint**: `GET /api/user`: Retrieves information about the user specified in the `USER_NAME` environment variable.
+
 ## QA for Tab Bar
 
 ### Local Preview
@@ -62,4 +90,3 @@ The primary theme/background color is purple (#800080). The tab text in the tab 
 - Check for any console errors or warnings when interacting with the tab bar.
 
 Make sure to update any references or styles using this color to match the theme guidelines.
-
