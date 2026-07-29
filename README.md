@@ -35,7 +35,7 @@ These methods will serve your site locally, which is useful for development and 
 
 ## Starting the Server
 
-This project uses Node.js and requires environment configuration via `dotenv`. To get started:
+This project uses Node.js and Express, serving static files from the project root directory (`__dirname`) and requires configuration via `dotenv`. To get started:
 
 1. Install the dependencies using npm:
    ```bash
@@ -47,7 +47,7 @@ This project uses Node.js and requires environment configuration via `dotenv`. T
    npm start
    ```
 
-3. By default, the server runs on `http://localhost:3000`.
+3. By default, the server runs on [http://localhost:3000](http://localhost:3000), where the `index.html` file will be displayed.
 
 ### Environment Configuration
 Ensure you have a `.env` file at the root of your project with the following content:
@@ -57,8 +57,9 @@ USER_NAME=your_username_here
 
 ### API Endpoint
 
-The following endpoint is exposed by the server:
-- `GET /api/user`: Retrieves information about the user specified in the `USER_NAME` environment variable.
+The server handles the following:
+- **Static Files**: All static files are served from the project root directory.
+- **API Endpoint**: `GET /api/user`: Retrieves information about the user specified in the `USER_NAME` environment variable.
 
 ## QA for Tab Bar
 
