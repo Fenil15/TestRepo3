@@ -17,13 +17,20 @@
         <a href="settings.html" role="tab">Settings</a>
         <a href="legal.html" role="tab">Legal</a>
     </nav>
-    <h1>Hello, World!</h1>
+    <h1 id="greeting">Hello, World!</h1>
     <a href="about.html">About Us</a>
     <a href="faq.html">FAQ</a>
     <a href="settings.html">Settings</a>
     <a href="legal.html">Legal</a>
     <a href="privacy.html">Privacy Policy</a>
-   
     <script defer src="tabbar.js"></script>
+    <script>
+        fetch('/api/user')
+            .then(response => response.json())
+            .then(data => {
+                const greetingElement = document.getElementById('greeting');
+                greetingElement.textContent = `HELLO ${data.username}`;
+            });
+    </script>
 </body>
 </html>
