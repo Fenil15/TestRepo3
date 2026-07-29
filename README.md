@@ -33,6 +33,30 @@ This repository contains static HTML files. To view them locally, you can use a 
 
 These methods will serve your site locally, which is useful for development and testing purposes.
 
+## Running the Node.js Server
+
+To run the Node.js server configured with dotenv, follow these instructions:
+
+1. Install the necessary dependencies, if not already installed:
+   ```bash
+   npm install
+   ```
+2. Ensure you have a `.env` file in the root of your project with the following content:
+   ```
+   USER_NAME=YourName
+   ```
+3. Start the server using:
+   ```bash
+   npm start
+   ```
+4. Visit the application at `http://localhost:3000`.
+
+## API Documentation
+
+The application exposes an API endpoint for user information:
+
+- **GET** `/api/user`: Retrieves the user information from the server.
+
 ## QA for Tab Bar
 
 ### Local Preview
@@ -58,8 +82,7 @@ The primary theme/background color is purple (#800080). The tab text in the tab 
 
 ### CSS/JS Contract Integrity Checklist
 - Ensure the CSS classes and IDs tied to the tab bar are consistent and match the design contract.
-- Verify JavaScript logic handles state changes and events consistently with specifications. 
+- Verify JavaScript logic handles state changes and events consistently with specifications.
 - Check for any console errors or warnings when interacting with the tab bar.
 
 Make sure to update any references or styles using this color to match the theme guidelines.
-
