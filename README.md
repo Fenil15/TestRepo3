@@ -33,6 +33,30 @@ This repository contains static HTML files. To view them locally, you can use a 
 
 These methods will serve your site locally, which is useful for development and testing purposes.
 
+## Running the Server
+
+To run the server, ensure you have Node.js installed and follow these steps:
+
+1. Install the necessary packages:
+   ```bash
+   npm install
+   ```
+2. Create a `.env` file in the root directory and configure the USER_NAME variable:
+   ```env
+   USER_NAME=YourNameHere
+   ```
+3. Start the server by executing:
+   ```bash
+   npm start
+   ```
+4. Visit `http://localhost:3000` in your web browser to interact with the app.
+
+## API and Features
+
+The server provides an API endpoint at `/api/user`.
+
+- This endpoint greets the user with `HELLO <USERNAME>` where `<USERNAME>` is the value set in your `.env` file for `USER_NAME`.
+
 ## QA for Tab Bar
 
 ### Local Preview
@@ -62,4 +86,3 @@ The primary theme/background color is blue (#0000FF). The tab text in the tab ba
 - Check for any console errors or warnings when interacting with the tab bar.
 
 Make sure to update any references or styles using this color to match the theme guidelines.
-
