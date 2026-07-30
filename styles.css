@@ -51,7 +51,7 @@ footer {
   display: flex;
   justify-content: space-around;
   background-color: #0000FF;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(0,0,0,0.0);
 }
 
 /* Base rule for tab items */
@@ -60,8 +60,7 @@ footer {
 }
 
 /* Dark theme override for the tab bar */
-[data-theme="dark"] .tab-bar {
-  background-color: #0000FF;
+[data-theme="dark"] .tab-bar { background-color: #800080;
   border-top-color: rgba(255,255,255,0.1);
 }
 
@@ -76,6 +75,7 @@ footer {
 .tab-bar [aria-current="page"] {
   font-weight: bold;
   color: #B0B0B0;
+  border-bottom: 2px solid #800080;
 }
 
 p {
