@@ -8,14 +8,14 @@ body {
 }
 
 header {
-  background-color: #0000FF;
+  background-color: #FF0000;
   color: white;
   padding: 10px 0;
   text-align: center;
 }
 
 nav {
-  background-color: #0000FF;
+  background-color: #FF0000;
   border-bottom: 1px solid #e7e7e7;
 }
 
@@ -38,7 +38,7 @@ nav ul li a {
 }
 
 footer {
-  background-color: #0000FF;
+  background-color: #FF0000;
   color: white;
   text-align: center;
   padding: 10px 0;
@@ -50,7 +50,7 @@ footer {
 .tab-bar {
   display: flex;
   justify-content: space-around;
-  background-color: #0000FF;
+  background-color: #FF0000;
   border-top: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -61,7 +61,7 @@ footer {
 
 /* Dark theme override for the tab bar */
 [data-theme="dark"] .tab-bar {
-  background-color: #0000FF;
+  background-color: #FF0000;
   border-top-color: rgba(255,255,255,0.1);
 }
 
@@ -76,6 +76,7 @@ footer {
 .tab-bar [aria-current="page"] {
   font-weight: bold;
   color: #B0B0B0;
+  border-bottom: 2px solid #FF0000; /* Added red underline */
 }
 
 p {
