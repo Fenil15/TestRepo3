@@ -57,6 +57,7 @@ footer {
 /* Base rule for tab items */
 .tab-bar [role="tab"] {
   color: #B0B0B0;
+  border-bottom: 2px solid #0000FF;
 }
 
 /* Dark theme override for the tab bar */
@@ -70,12 +71,14 @@ footer {
 .tab-bar [role="tab"]:hover {
   outline: none;
   color: #B0B0B0;
+  border-bottom: 2px solid #0000FF;
 }
 
 /* Active tab style */
 .tab-bar [aria-current="page"] {
   font-weight: bold;
   color: #B0B0B0;
+  border-bottom: 2px solid #0000FF;
 }
 
 p {
