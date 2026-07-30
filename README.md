@@ -67,7 +67,7 @@ The server handles the following:
 To perform a QA review, start by serving the application locally using one of the methods outlined above.
 
 ### Tab Bar Color Scheme
-The primary theme/background color is light blue (#ADD8E6). The tab text in the tab bar is light gray (#B0B0B0) across default, hover/focus, and active states.
+The primary theme/background color is light blue (#ADD8E6). The tab bar accent is now red (#FF0000), and the tab text is light gray (#B0B0B0) across default, hover/focus, and active states.
 
 ### Visual Checks
 - Verify the tab bar is visually aligned according to design specifications in both light and dark modes.
