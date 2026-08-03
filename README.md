@@ -1,6 +1,6 @@
 # Project Theme Information
 
-The primary theme/background color is light blue (#ADD8E6). This color choice ensures consistency and visual appeal across all pages.
+The primary theme/background color is orange (#FFA500). This color choice ensures consistency and visual appeal across all pages.
 
 This repository contains static HTML files. To view them locally, you can use a simple HTTP server. Follow the instructions below:
 
@@ -67,7 +67,7 @@ The server handles the following:
 To perform a QA review, start by serving the application locally using one of the methods outlined above.
 
 ### Tab Bar Color Scheme
-The primary theme/background color is light blue (#ADD8E6). The tab text in the tab bar is light gray (#B0B0B0) across default, hover/focus, and active states.
+The primary theme/background color is orange (#FFA500). The tab text in the tab bar is light gray (#B0B0B0) across default, hover/focus, and active states.
 
 ### Visual Checks
 - Verify the tab bar is visually aligned according to design specifications in both light and dark modes.
