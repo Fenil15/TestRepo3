@@ -1,10 +1,15 @@
 /* Base styles for the document */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ADD8E6; /* yellow */
+  background-color: #FFFF00; /* yellow */
   color: #333;
   margin: 0;
   padding: 0;
+}
+
+/* Ensure background stays yellow in dark mode */
+[data-theme="dark"] body {
+  background-color: #FFFF00;
 }
 
 header {
